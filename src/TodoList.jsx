@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add';
 import ListCom from "./ListCom"
 
 const TodoList = () =>{
-  const [item, setItem] = useState("ok");
+  const [item, setItem] = useState();
   const [newItem, setNewItem] = useState([])
 
   const itemEvent = (event) =>{
@@ -27,7 +27,7 @@ const TodoList = () =>{
           <br />
           <input type="text" placeholder="Add an item" onChange={itemEvent}/>
           <Button className="newBtn" onClick={listOfItem}>
-            <AddIcon />
+            <AddIcon sx={{fontSize: 10}} />
           </Button>
 
           <br />
